@@ -11,8 +11,8 @@ galaxy_info:
   galaxy_tags: []
 
 dependencies:
-- role: basedeps
-- role: ice
-- role: omero-python-deps
-- role: redis
+- role: openmicroscopy.basedeps
+- role: openmicroscopy.ice
+- role: openmicroscopy.omero-python-deps
+- role: openmicroscopy.redis
   when: omero_web_runtime_redis

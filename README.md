@@ -8,7 +8,7 @@ Mostly Python modules.
 Dependencies
 ------------
 
-Depends on `basedeps`, `ice` and `omero-python-deps`.
+Depends on `basedeps`, `ice`, `omero-python-deps` and `selinux-utils`.
 Optionally depends on `redis`.
 
 By default `omero-python-deps` is installed with the default (recommended) options.

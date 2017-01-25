@@ -1,0 +1,5 @@
+- src: openmicroscopy.basedeps
+- src: openmicroscopy.ice
+- src: openmicroscopy.omero-python-deps
+- src: openmicroscopy.redis
+- src: openmicroscopy.selinux-utils

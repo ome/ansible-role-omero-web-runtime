@@ -35,18 +35,7 @@
     state: present
   when: omero_web_runtime_redis
 
-
 # selinux
-- name: omero | install selinux utilities
-  become: yes
-  yum:
-    name: "{{ item }}"
-    state: present
-  with_items:
-    - libselinux-python
-    - libsemanage-python
-    - policycoreutils-python
-  when: omero_selinux_setup
 
 - name: omero web | selinux booleans
   become: yes
@@ -57,7 +46,7 @@
   with_items:
     - httpd_read_user_content
     - httpd_enable_homedirs
-  when: omero_selinux_setup
+  when: selinux_enabled
 
 # Alternatively set httpd_can_network_connect=yes to allow all ports
 - name: omero web | selinux ports
@@ -67,4 +56,4 @@
     proto: tcp
     setype: http_port_t
     state: present
-  when: omero_selinux_setup
+  when: selinux_enabled

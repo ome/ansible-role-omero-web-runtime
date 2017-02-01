@@ -8,11 +8,10 @@ Mostly Python modules.
 Dependencies
 ------------
 
-Depends on `basedeps`, `ice`, `omero-python-deps` and `selinux-utils`.
-Optionally depends on `redis`.
-
-By default `omero-python-deps` is installed with the default (recommended) options.
-If you wish you can set `omero_python_deps_recommended: False` to only install the minimum requirements.
+See `meta/main.yml`.
+The dependency `omero-python-deps` is installed with the default (recommended) options.
+If you wish you can set `omero_python_deps_recommended: False` to only install the minimum requirements, for instance during development.
+This is not supported in production.
 
 
 Role Variables

@@ -1,6 +1,16 @@
 ---
 # tasks file for roles/omero-web-runtime
 
+- name: omero web | distribution packages
+  become: yes
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - python-jinja2
+    - python-requests
+    - PyYAML
+
 - name: omero web | install python redis package
   become: yes
   yum:

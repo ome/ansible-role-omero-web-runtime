@@ -1,5 +1,6 @@
 - src: openmicroscopy.basedeps
 - src: openmicroscopy.ice
+  version: 1.0.0
 - src: openmicroscopy.omero-python-deps
 - src: openmicroscopy.redis
 - src: openmicroscopy.selinux-utils

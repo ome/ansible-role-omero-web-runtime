@@ -5,6 +5,15 @@ OMERO.web runtime dependencies.
 
 Mostly Python modules.
 
+Status: DEPRECATED
+------------------
+
+This role has been replaced by the more complete
+https://github.com/openmicroscopy/ansible-role-omero-web,
+which in turn depends on
+https://github.com/openmicroscopy/ansible-role-omero-python-deps
+for functionality similar to this role.
+
 Dependencies
 ------------
 
